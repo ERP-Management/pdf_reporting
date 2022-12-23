@@ -37,3 +37,10 @@ def student_get_all(req):
     print(studs)
     json_data=JSONRenderer().render(sr.data)
     return HttpResponse(json_data,content_type="application/json")
+
+def  abount(req):
+    print("this is my about page")
+    return HttpResponse("this is my about page")
+
+def new_method(req):
+    return HttpResponse("this is my new method")
